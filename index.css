@@ -1,0 +1,15 @@
+/* HEADER */
+header{
+    background: url(./asset/bg.jpeg) ;
+    background-size:cover ;
+
+}
+.title{
+    font-family:'Asset', cursive;
+  color:#8FFF67 ;
+  font-size: 170px;
+
+
+}
+/* #fur{
+    transform: rotate(180deg); */
