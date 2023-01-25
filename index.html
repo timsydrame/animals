@@ -7,27 +7,39 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Asset&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asset&display=swap" rel="stylesheet">
     <title>Animals</title>
 
 </head>
 <body >
     
-        <header class="col-12 vh-100 d-flex flex-column ">
-            <div class="title"class="col-10 p-0" >ANI</div>
-            <div class="title" class="col-10 p-0">MAL</div>
-            <div class="title " class="col-10 p-0">S</div>
+        <header class="col-12 vh-100 d-flex flex-column">
+            <div class="title">ANI</div>
+            <div class="title">MAL</div>
+            <div class="title">S</div>
           
                 <!-- <img class="col-12 vh-100" id="fur" src="./asset/bg.jpj.jpeg"> -->
         </header>
-        <main id="cards" class="col-12 d-flex bg-dark ">
-            <div class="border border-light col-6 h-25 d-flex justify-content-center align-item-center">
-                <button class="rounded-circle text-light border border-light bg-dark">+</button>
+        <section id="cardSection" class="col-12 bg-dark min-vh-100 p-3 d-flex flex-wrap">
+            <div class="border border-light col-md-6 col-xs-12 d-flex justify-content-center align-items-center m-1" id="cardSectionElements">
+                <button class="text-light border border-light bg-dark w-25 fs-1">+</button>
             </div>
-            
-
-        </main>
+            <div class="border border-light col-md-6 col-xs-12 d-flex justify-content-center align-items-center m-1" id="cardSectionElements">
+                <button class="text-light border border-light bg-dark w-25 fs-1">+</button>
+            </div>
+            <div class="border border-light col-md-6 col-xs-12 d-flex justify-content-center align-items-center m-1 float-left" id="cardSectionElements">
+                <button class="text-light border border-light bg-dark w-25 fs-1">+</button>
+            </div>
+        
+        </section> 
+        <div id="statsTitle" class="col-12 vh-70 d-flex flex-column p-3">
+            <div class="title">STA</div>
+            <div class="title">TS</div>
+        </div>
+        <section id="statSection" class="col-12 bg-dark min-vh-100">
+           
+        </section>
 
     
     

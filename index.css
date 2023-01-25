@@ -1,5 +1,5 @@
 /* HEADER */
-header{
+header, #statsTitle{
     background: url(./asset/bg.jpeg) ;
     background-size:cover ;
 
@@ -7,9 +7,33 @@ header{
 .title{
     font-family:'Asset', cursive;
   color:#8FFF67 ;
-  font-size: 170px;
-
-
+  font-size: 180px;
 }
 /* #fur{
     transform: rotate(180deg); */
+
+section {
+    border-left:1vw solid transparent;
+    border-right:1vw solid transparent;
+    border-image:url(./asset/bg.jpeg) 30;
+    /* overflow-x:initial; */
+}
+#statSection {
+    border-bottom:1vw solid transparent;
+    border-image:url(./asset/bg.jpeg) 30;
+}
+
+#cardSectionElements {
+    height: 50vh !important;
+
+}
+
+button {
+    height:20vh;
+    border-radius: 50% !important;
+}
+
+button:hover {
+    background-color: #8FFF67 !important;
+    color:black !important; 
+}
