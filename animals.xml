@@ -1,57 +1,83 @@
 <?xml version="1.0"?>
 <animals>
-    <animalsName>
+    <animalsInfo>
         <name>Wolf</name>
-        <weight>30-40 kg</weight>
-        <size>1-1.5 m</size>
+        <weight>35 kg</weight>
+        <size>1.25 m</size>
         <speed>50 km/h</speed>
         <diet>carnivorous</diet>
         <location>widely distributed in the northern hemisphere</location>
-    </animalsName>
+        <photo>../asset/loup.jpg</photo>
+    </animalsInfo>
 
-    <animalsName>
+    <animalsInfo>
         <name>Lion</name>
-        <weight>150-250 kg</weight>
-        <size>1.2-2 m</size>
+        <weight>200 kg</weight>
+        <size>1.6 m</size>
         <speed>50 km/h</speed>
         <diet>carnivorous</diet>
         <location>sub-Saharan Africa and India</location>
-    </animalsName>
+        <photo>../asset/lion.jpg</photo>
+    </animalsInfo>
 
-    <animalsName>
+    <animalsInfo>
         <name>Cat</name>
-        <weight>3-9 kg</weight>
-        <size>0.3-1 m</size>
+        <weight>6 kg</weight>
+        <size>0.65 m</size>
         <speed>48 km/h</speed>
         <diet>carnivorous</diet>
         <location>widely distributed worldwide</location>
-    </animalsName>
+        <photo>../asset/chat.jpg</photo>
+    </animalsInfo>
 
-    <animalsName>
+    <animalsInfo>
         <name>Elephant</name>
-        <weight>3000-5000 kg</weight>
-        <size>3-4 m</size>
+        <weight>4000 kg</weight>
+        <size>3.5 m</size>
         <speed>40 km/h</speed>
         <diet>herbivore</diet>
         <location>Africa and Asia</location>
-    </animalsName>
+        <photo>../asset/elephant.jpeg</photo>
+    </animalsInfo>
 
-    <animalsName>
+    <animalsInfo>
         <name>Tiger</name>
-        <weight>200-300 kg</weight>
-        <size>2-3 m</size>
+        <weight>250 kg</weight>
+        <size>2.5 m</size>
         <speed>65 km/h</speed>
         <diet>carnivorous</diet>
         <location>Asia</location>
-    </animalsName>
+        <photo>../asset/tigre.jpg</photo>
+    </animalsInfo>
 
-    <animalsName>
+    <animalsInfo>
         <name>Panther</name>
-        <weight>30-60 kg</weight>
-        <size>1-1.5 m</size>
+        <weight>45 kg</weight>
+        <size>1.25 m</size>
         <speed>50 km/h</speed>
         <diet>carnivorous</diet>
         <location>Africa and America</location>
-    </animalsName>
+        <photo>../asset/panthere.jpg</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Linx</name>
+        <weight>20-25 kg</weight>
+        <size>1-1.2 m</size>
+        <speed>50 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>Europe and Asia</location>
+        <photo>../asset/linx</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Sea turtle</name>
+        <weight>30-40 kg</weight>
+        <size>1.2-1.5 m</size>
+        <speed>20 km/h</speed>
+        <diet>herbivore</diet>
+        <location>Ocean</location>
+        <photo>../asset/tortue.jpg</photo>
+    </animalsInfo>
 
 </animals>
