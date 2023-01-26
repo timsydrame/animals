@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<animals>
+    <animalsName>
+        <name>Wolf</name>
+        <weight>30-40 kg</weight>
+        <size>1-1.5 m</size>
+        <speed>50 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>widely distributed in the northern hemisphere</location>
+    </animalsName>
+
+    <animalsName>
+        <name>Lion</name>
+        <weight>150-250 kg</weight>
+        <size>1.2-2 m</size>
+        <speed>50 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>sub-Saharan Africa and India</location>
+    </animalsName>
+
+    <animalsName>
+        <name>Cat</name>
+        <weight>3-9 kg</weight>
+        <size>0.3-1 m</size>
+        <speed>48 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>widely distributed worldwide</location>
+    </animalsName>
+
+    <animalsName>
+        <name>Elephant</name>
+        <weight>3000-5000 kg</weight>
+        <size>3-4 m</size>
+        <speed>40 km/h</speed>
+        <diet>herbivore</diet>
+        <location>Africa and Asia</location>
+    </animalsName>
+
+    <animalsName>
+        <name>Tiger</name>
+        <weight>200-300 kg</weight>
+        <size>2-3 m</size>
+        <speed>65 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>Asia</location>
+    </animalsName>
+
+    <animalsName>
+        <name>Panther</name>
+        <weight>30-60 kg</weight>
+        <size>1-1.5 m</size>
+        <speed>50 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>Africa and America</location>
+    </animalsName>
+
+</animals>
