@@ -54,11 +54,31 @@ h3 {
     height: 50vh !important;
 
 }
+
+/*  a modifier en js et en html du formulaire monbouton1 */
 #addButton {
     height:20vh;
     border-radius: 50% !important;
+    
+}
+/* partie fatoumata */
+
+.monBouton1:hover {
+    background-color: #8FFF67 !important;
+    color:black !important; 
+}
+#monbtn1{
+    display: block;
 }
 
+#signupForm{
+    /* visibility: hidden; */
+    display: none;
+}
+
+  
+/* partie fatoumata */
+/* partie Colas */
 #addButton:hover {
     background-color: #8FFF67 !important;
     color:black !important; 
@@ -95,4 +115,5 @@ h3 {
     color: rgb(62, 211, 62);
     width: 300px;
 }
+/* partie Colas */
 

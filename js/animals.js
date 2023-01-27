@@ -15,9 +15,11 @@ function loadXMLDoc() {
         // console.log(this);
         
         if(this.readyState == 4 && this.status == 200) {
-            console.log(this);
+            // console.log(this);
             // paraf.innerHTML = this.responseText;
+
             fn_writeXML(this);
+
         }
     
     };
@@ -25,6 +27,7 @@ function loadXMLDoc() {
     xmlhttp.open("GET", "./animals.xml", true);
     xmlhttp.send();
 }
+
 
 loadXMLDoc();
 
