@@ -1,39 +1,67 @@
-/* HEADER */
+/* TITLES : HEADER AND MIDDLE "ANIMALS" AND "STATS"*/
 header, #statsTitle{
     background: url(./asset/bg.jpeg) ;
     background-size:cover ;
-
 }
+
 .title{
-    font-family:'Asset', cursive;
+font-family:'Asset', cursive;
   color:#8FFF67 ;
   font-size: 180px;
 }
-/* #fur{
-    transform: rotate(180deg); */
+.title:hover {
+    cursor: pointer;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
 
+@keyframes colorchange {
+    0% {
+        color: #8FFF67;
+    }
+    20% { 
+        color: #88DF81;
+    }
+    40% {
+        color: #82BE9C
+        ;
+    }
+    60% {
+        color: #7B9EB6;
+    }
+    80% {
+        color: #747DD0;
+    }
+}
+
+/* GENERAL */
 section {
     border-left:1vw solid transparent;
     border-right:1vw solid transparent;
     border-image:url(./asset/bg.jpeg) 30;
     /* overflow-x:initial; */
 }
-#statSection {
-    border-bottom:1vw solid transparent;
-    border-image:url(./asset/bg.jpeg) 30;
+
+h3 {
+    font-family: 'Arima Madurai', cursive;
 }
+
+/* CARDS SECTION */
 
 #cardSectionElements {
     height: 50vh !important;
 
 }
 
-.monBouton1 {
+/*  a modifier en js et en html du formulaire monbouton1 */
+#addButton {
     height:20vh;
     border-radius: 50% !important;
     
 }
-
+/* partie fatoumata */
 
 .monBouton1:hover {
     background-color: #8FFF67 !important;
@@ -48,5 +76,44 @@ section {
     display: none;
 }
 
-    
+  
+/* partie fatoumata */
+/* partie Colas */
+#addButton:hover {
+    background-color: #8FFF67 !important;
+    color:black !important; 
+}
+
+
+/* STATS SECTION */
+
+#statSection {
+    border-bottom:1vw solid transparent;
+    border-image:url(./asset/bg.jpeg) 30;
+}
+
+#bootstrapBars {
+    background-color: #8FFF67 !important;
+}
+
+
+/* CARD */
+
+.img-element {
+    width: 600px;
+    height: 400px;
+    padding: 30px;
+}
+
+.titre-element {
+    color: rgb(228, 117, 117);
+    top : 10%;
+}
+
+.para-element {
+    top: 15%;
+    color: rgb(62, 211, 62);
+    width: 300px;
+}
+/* partie Colas */
 
