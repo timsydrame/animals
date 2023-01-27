@@ -51,7 +51,6 @@ function fn_writeXML(xml) {
 
         paraElement.innerHTML += x[i].children[j].nodeName + " : " + x[i].children[j].innerHTML + "<br>" ;
     }
-    
     parentElement.appendChild(imgElement);
     parentElement.appendChild(titreElement);
     parentElement.appendChild(paraElement);
