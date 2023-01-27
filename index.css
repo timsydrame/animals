@@ -2,7 +2,6 @@
 header, #statsTitle{
     background: url(./asset/bg.jpeg) ;
     background-size:cover ;
-
 }
 .title{
     font-family:'Asset', cursive;
@@ -36,4 +35,14 @@ button {
 button:hover {
     background-color: #8FFF67 !important;
     color:black !important; 
+}
+img{
+width: 200px;
+height: 300px;
+}
+.container .row{
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-between;
+   overflow: hidden;
 }

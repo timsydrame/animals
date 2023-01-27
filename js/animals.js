@@ -1,5 +1,5 @@
 
-  const imageUrl = "../asset/loup.jpg";
+  const imageUrl = "/animals/asset/loup.jpg";
   const parentElement = document.getElementById("photoLoup");
   const button = document.getElementById("validate");
   let taille = 5;
@@ -15,7 +15,7 @@
       Size: between 1.5 and 1.8 meters in length
       Speed: 60 km/h
       Food: sheep, foxes and other wild animals, fruits and vegetables.
-      Location: North America, Europe, Asia, and Africa.`
+      Location: North America, Europe, Asia, and Africa.`;
       imgElement.style.width = "300px";
       imgElement.style.height = "200px";
       imgElement.style.text = "center";
@@ -28,6 +28,8 @@
       parentElement.appendChild(titreElement);
       parentElement.appendChild(paraElement);
     }
-  });
+  })
 
-  
+  fucntion fn_writeXML(xml){
+    
+  }
