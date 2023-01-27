@@ -3,7 +3,7 @@ const signupForm = document.getElementById("signupForm");
 const addButton = document.getElementById("addButton");
 
 addButton.addEventListener("click", () => {
-  //   console.log("hello addButton");
+  console.log("hello addButton");
   addButton.style.display = "none";
   signupForm.style.display = "block";
 });
