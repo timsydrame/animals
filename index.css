@@ -36,13 +36,42 @@ button:hover {
     background-color: #8FFF67 !important;
     color:black !important; 
 }
+
+
+/* CARD */
+
+.img-element {
+    width: 600px;
+    height: 400px;
+    padding: 30px;
+}
+
+.titre-element {
+    color: rgb(228, 117, 117);
+    top : 10%;
+}
+
+.para-element {
+    top: 15%;
+    color: rgb(62, 211, 62);
+    width: 300px;
+}
 img{
 width: 200px;
 height: 300px;
 }
-.container .row{
-    display:flex;
-    align-items: flex-end;
-    justify-content: space-between;
-   overflow: hidden;
+
+.card{
+    margin-left: 40%;
+    border: 1px solid black;
+    margin: 10px auto;
+    margin-bottom: 100rem;
+    width: 400px;
+}
+
+.card{
+
+    display: flex;
+flex-wrap: wrap;
+width: 50%;
 }

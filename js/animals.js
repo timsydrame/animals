@@ -30,6 +30,4 @@
     }
   })
 
-  fucntion fn_writeXML(xml){
-    
-  }
+ 
