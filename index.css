@@ -1,0 +1,59 @@
+/* HEADER */
+header, #statsTitle{
+    background: url(./asset/bg.jpeg) ;
+    background-size:cover ;
+
+}
+.title{
+    font-family:'Asset', cursive;
+  color:#8FFF67 ;
+  font-size: 180px;
+}
+/* #fur{
+    transform: rotate(180deg); */
+
+section {
+    border-left:1vw solid transparent;
+    border-right:1vw solid transparent;
+    border-image:url(./asset/bg.jpeg) 30;
+    /* overflow-x:initial; */
+}
+#statSection {
+    border-bottom:1vw solid transparent;
+    border-image:url(./asset/bg.jpeg) 30;
+}
+
+#cardSectionElements {
+    height: 50vh !important;
+
+}
+
+button {
+    height:20vh;
+    border-radius: 50% !important;
+}
+
+button:hover {
+    background-color: #8FFF67 !important;
+    color:black !important; 
+}
+
+
+/* CARD */
+
+.img-element {
+    width: 600px;
+    height: 400px;
+    padding: 30px;
+}
+
+.titre-element {
+    color: rgb(228, 117, 117);
+    top : 10%;
+}
+
+.para-element {
+    top: 15%;
+    color: rgb(62, 211, 62);
+    width: 300px;
+}

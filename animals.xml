@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<animals>
+    <animalsInfo>
+        <name>Wolf</name>
+        <weight>35 kg</weight>
+        <size>1.25 m</size>
+        <speed>50 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>widely distributed in the northern hemisphere</location>
+        <photo>../asset/loup.jpg</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Lion</name>
+        <weight>200 kg</weight>
+        <size>1.6 m</size>
+        <speed>50 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>sub-Saharan Africa and India</location>
+        <photo>../asset/lion.jpg</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Cat</name>
+        <weight>6 kg</weight>
+        <size>0.65 m</size>
+        <speed>48 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>widely distributed worldwide</location>
+        <photo>../asset/chat.jpg</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Elephant</name>
+        <weight>4000 kg</weight>
+        <size>3.5 m</size>
+        <speed>40 km/h</speed>
+        <diet>herbivore</diet>
+        <location>Africa and Asia</location>
+        <photo>../asset/elephant.jpeg</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Tiger</name>
+        <weight>250 kg</weight>
+        <size>2.5 m</size>
+        <speed>65 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>Asia</location>
+        <photo>../asset/tigre.jpg</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Panther</name>
+        <weight>45 kg</weight>
+        <size>1.25 m</size>
+        <speed>50 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>Africa and America</location>
+        <photo>../asset/panthere.jpg</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Linx</name>
+        <weight>20-25 kg</weight>
+        <size>1-1.2 m</size>
+        <speed>50 km/h</speed>
+        <diet>carnivorous</diet>
+        <location>Europe and Asia</location>
+        <photo>../asset/linx</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Sea turtle</name>
+        <weight>30-40 kg</weight>
+        <size>1.2-1.5 m</size>
+        <speed>20 km/h</speed>
+        <diet>herbivore</diet>
+        <location>Ocean</location>
+        <photo>../asset/tortue.jpg</photo>
+    </animalsInfo>
+
+</animals>
