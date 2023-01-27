@@ -1,4 +1,5 @@
 /* TITLES : HEADER AND MIDDLE "ANIMALS" AND "STATS"*/
+
 header, #statsTitle{
     background: url(./asset/bg.jpeg) ;
     background-size:cover ;
@@ -9,6 +10,7 @@ font-family:'Asset', cursive;
   color:#8FFF67 ;
   font-size: 180px;
 }
+
 .title:hover {
     cursor: pointer;
     animation-name: colorchange;
@@ -37,6 +39,7 @@ font-family:'Asset', cursive;
 }
 
 /* GENERAL */
+
 section {
     border-left:1vw solid transparent;
     border-right:1vw solid transparent;
@@ -52,36 +55,25 @@ h3 {
 
 #cardSectionElements {
     height: 50vh !important;
-
 }
 
 /*  a modifier en js et en html du formulaire monbouton1 */
 #addButton {
     height:20vh;
-    border-radius: 50% !important;
-    
+    border-radius: 50% !important;   
+    display: block; 
 }
-/* partie fatoumata */
 
-.monBouton1:hover {
+#addButton:hover {
     background-color: #8FFF67 !important;
     color:black !important; 
 }
-#monbtn1{
-    display: block;
-}
+
+/* FORM */
 
 #signupForm{
     /* visibility: hidden; */
     display: none;
-}
-
-  
-/* partie fatoumata */
-/* partie Colas */
-#addButton:hover {
-    background-color: #8FFF67 !important;
-    color:black !important; 
 }
 
 
@@ -115,5 +107,3 @@ h3 {
     color: rgb(62, 211, 62);
     width: 300px;
 }
-/* partie Colas */
-
