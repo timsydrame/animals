@@ -28,103 +28,101 @@
     <section id="cardSection" class="col-12 bg-dark min-vh-100 p-2 d-flex flex-wrap justify-content-around">
       
       <!-- ADD BUTTON -->
-        <div class="border border-light col-md-5 col-xs-12 d-flex justify-content-center align-items-center m-1" id="cardSectionElements">
+        <div class="border border-light col-md-5 col-xs-12 d-flex justify-content-center align-items-center m-1 cardSectionElements">
         <button class="text-light border border-light bg-dark w-25 fs-1" id="addButton">+</button>
 
-    <!-- FORM + MODALS -->
-      <form id="signupForm">
-        <div class="row my-2 align-items-center">
-            <div class="col-3 col-auto">
-                <label for="poidAnimal" class="col-form-label text-light h3-font-size">weight</label>
-            </div>
-            <div class="col-auto">
-                <input type="text" class="form-control bg-success text-white " id="weight">
-            </div>
-        </div>
-        <div class="row my-2 align-items-center">
-            <div class=" col-3 col-auto">
-                <label for="tailleAnimal" class="col-form-label text-light h2-font-size ">Cut</label>
-            </div>
-            <div class="col-auto">
-                <input type="text" class="form-control bg-success text-white " id="cut">
-            </div>
-        </div>
-        <div class="row my-2 align-items-center">
-            <div class=" col-3 col-auto">
-                <label for="vitessAnimal" class="col-form-label text-light h3-font-size">Speed</label>
-            </div>
-            <div class="col-auto">
-                <input type="text" class="form-control bg-success text-white" id="speed">
-            </div>
-        </div>
-        <div class="row my-2 align-items-center">
-            <div class="col-3 col-auto">
-                <label for="nourritureAnimal"
-                    class="col-form-label text-light h3-font-size">Food</label>
-            </div>
-            <div class="col-auto">
-                <input type="text" class="form-control bg-success text-white" id="food">
-            </div>
-        </div>
-        <div class="row my-2 align-items-center">
-            <div class="col-3 col-auto">
-                <label for="localisationAnimal"
-                    class="col-form-label text-light h3-font-size">Location</label>
-            </div>
-            <div class="col-auto">
-                <input type="text" class="form-control bg-success text-white" id="location">
-            </div>
-        </div>
-        <div class="row my-2 align-items-center">
-            <div class="col-4 col-auto">
-                &nbsp;
-            </div>
-            <div class="col-8 col-auto">
-                <button type="button" class="btn btn-success ml-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
-            
-                <button type="button" class="btn btn-secondary " id="btnReset">Cancel</button>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header  bg-success">
-                    <h1 class="modal-title fs-5 " id="exampleModalLabel">Confirmation</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- FORM + MODALS -->
+            <form id="signupForm">
+                <div class="row my-2 align-items-center">
+                    <div class="col-3 col-auto">
+                        <label for="poidAnimal" class="col-form-label text-light h3-font-size">weight</label>
                     </div>
-                    <div class="modal-body  bg-success">
-                        <p>are you sure you want to add this file?</p>
-                    </div>
-                    <div class="modal-footer bg-success">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <div class="col-auto">
+                        <input type="text" class="form-control bg-success text-white " id="weight">
                     </div>
                 </div>
+                <div class="row my-2 align-items-center">
+                    <div class=" col-3 col-auto">
+                        <label for="tailleAnimal" class="col-form-label text-light h2-font-size ">Cut</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control bg-success text-white " id="cut">
+                    </div>
                 </div>
-            </div>
+                <div class="row my-2 align-items-center">
+                    <div class=" col-3 col-auto">
+                        <label for="vitessAnimal" class="col-form-label text-light h3-font-size">Speed</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control bg-success text-white" id="speed">
+                    </div>
+                </div>
+                <div class="row my-2 align-items-center">
+                    <div class="col-3 col-auto">
+                        <label for="nourritureAnimal"
+                            class="col-form-label text-light h3-font-size">Food</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control bg-success text-white" id="food">
+                    </div>
+                </div>
+                <div class="row my-2 align-items-center">
+                    <div class="col-3 col-auto">
+                        <label for="localisationAnimal"
+                            class="col-form-label text-light h3-font-size">Location</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control bg-success text-white" id="location">
+                    </div>
+                </div>
+                <div class="row my-2 align-items-center">
+                    <div class="col-4 col-auto">
+                        &nbsp;
+                    </div>
+                    <div class="col-8 col-auto">
+                        <button type="button" class="btn btn-success ml-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Add</button>
+                    
+                        <button type="button" class="btn btn-secondary " id="btnReset">Cancel</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header  bg-success">
+                            <h1 class="modal-title fs-5 " id="exampleModalLabel">Confirmation</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body  bg-success">
+                                <p>are you sure you want to add this file?</p>
+                            </div>
+                            <div class="modal-footer bg-success">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
-    </form>
-</div>
 
     <!-- CARDS DISPLAYED-->
 
-      <div class="border border-light col-sm-12 col-md-5  d-flex flex-column justify-content-center align-items-center m-1 text-light" id="cardSectionElements">
-    
+      <!-- <div class="border border-light col-sm-12 col-md-5  d-flex flex-column justify-content-center align-items-center m-1 text-light" id="cardSectionElements">
 
       </div>
-      
-     
+       -->
     </section> 
     
     
         <!---------------------------Part GAËLLE----------------------------->
 
-        <div class="row row-cols-1 row-cols-md-2 g-4 ">
+        <!-- <div class="row row-cols-1 row-cols-md-2 g-4 ">
             <div class="col">
                 <div class="photo" id="photoLoup"></div>
             </div>
         </div>
-    
+     -->
      
         <!---------------------------------------------------------------->
 

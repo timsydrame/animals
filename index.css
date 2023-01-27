@@ -53,7 +53,7 @@ h3 {
 
 /* CARDS SECTION */
 
-#cardSectionElements {
+.cardSectionElements {
     height: 50vh !important;
 }
 

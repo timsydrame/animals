@@ -1,94 +1,105 @@
-
-const parentElement = document.getElementById("cardSectionElements");
-
+const parentElement = document.getElementById("cardSection");
 
 function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
 
-    var xmlhttp = new XMLHttpRequest();
+  // console.log(xmlhttp);
 
-    // console.log(xmlhttp);
+  xmlhttp.onreadystatechange = function () {
+    // console.log(this);
 
-    xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      // console.log(this);
+      // paraf.innerHTML = this.responseText;
 
-        // console.log(this);
+      fn_writeXML(this);
+    }
+  };
 
-        if(this.readyState == 4 && this.status == 200) {
-            // console.log(this);
-            // paraf.innerHTML = this.responseText;
-
-            fn_writeXML(this);
-
-        }
-
-    };
-
-    xmlhttp.open("GET", "./animals.xml", true);
-    xmlhttp.send();
+  xmlhttp.open("GET", "./animals.xml", true);
+  xmlhttp.send();
 }
-
 
 loadXMLDoc();
 function fn_writeXML(xml) {
-
   let xmlDoc = xml.responseXML;
   let x = xmlDoc.getElementsByTagName("animalsInfo");
   let animalsInfoLength = x[0].children.length;
-      console.log(animalsInfoLength);
-  
+  console.log(animalsInfoLength);
+
   for (let i = 0; i < animalsInfoLength; i++) {
+    // const divCard = document.createElement("div");
+    // divCard.classList.add("card text-bg-dark");
+    // const imgElement = document.createElement("img");
+    // imgElement.classList.add("card-img");
+    // const cardBody = document.createElement("div");
+    // cardBody.classList.add("card-img-overlay");
+    // const titreElement = document.createElement("h5");
+    // titreElement.classList.add("card-title");
 
-    const divCard = document.createElement("div");
-    divCard.classList.add("card text-bg-dark");
-    const imgElement = document.createElement("img");
-    imgElement.classList.add("card-img");
-    const cardBody = document.createElement("div");
-    cardBody.classList.add("card-img-overlay");
-    const titreElement = document.createElement("h5");
-    titreElement.classList.add("card-title");
+    var imgElement = x[i].children[animalsInfoLength - 1].innerHTML;
 
+    var titreElement = x[i].children[0].innerHTML;
+    var pWeight = x[i].children[1].innerHTML;
+    var pSize = x[i].children[2].innerHTML;
+    var pSpeed = x[i].children[3].innerHTML;
+    var pDiet = x[i].children[4].innerHTML;
+    var pLocation = x[i].children[5].innerHTML;
 
-    
-    const pWeight = document.createElement("p");
-    pWeight.classList.add("card-text");
-    const pSize = document.createElement("p");
-    pSize.classList.add("card-text");
-    const pSpeed = document.createElement("p");
-    pSpeed.classList.add("card-text");
-    const pDiet = document.createElement("p");
-    pDiet.classList.add("card-text");
-    const pLocation = document.createElement("p");
-    pLocation.classList.add("card-text");
+    // const parentElement = document.createElement("div")
+    // parentElement.classList.add("animalCards");
 
+    parentElement.innerHTML += `<div class="border border-light col-sm-12 col-md-5  d-flex flex-column justify-content-center align-items-center m-1 text-light" id="cardSectionElements">
+                                    <div class="card text-bg-dark">
+                                    <img src="${imgElement}" class="card-img" alt="...">
+                                      <div class="card-img-overlay">
+                                        <h5 class="card-title">${titreElement}</h5>
+                                        <p class="card-text">${pWeight}</p>
+                                        <p class="card-text">${pSize}</p>
+                                        <p class="card-text">${pSpeed}</p>
+                                        <p class="card-text">${pDiet}</p>
+                                        <p class="card-text">${pLocation}</p>
+                                      </div>
+                                    </div>
+                                  </div>`;
 
-    imgElement.src = x[i].children[animalsInfoLength - 1].innerHTML;
+    // const pWeight = document.createElement("p");
+    // pWeight.classList.add("card-text");
+    // const pSize = document.createElement("p");
+    // pSize.classList.add("card-text");
+    // const pSpeed = document.createElement("p");
+    // pSpeed.classList.add("card-text");
+    // const pDiet = document.createElement("p");
+    // pDiet.classList.add("card-text");
+    // const pLocation = document.createElement("p");
+    // pLocation.classList.add("card-text");
 
-    titreElement.innerHTML = x[i].children[0].innerHTML;
-    pWeight.innerHTML = x[i].children[1].innerHTML;
-    pSize.innerHTML = x[i].children[2].innerHTML;
-    pSpeed.innerHTML = x[i].children[3].innerHTML;
-    pDiet.innerHTML = x[i].children[4].innerHTML;
-    pLocation.innerHTML = x[i].children[5].innerHTML;
+    // imgElement.src = x[i].children[animalsInfoLength - 1].innerHTML;
+
+    // titreElement.innerHTML = x[i].children[0].innerHTML;
+    // pWeight.innerHTML = x[i].children[1].innerHTML;
+    // pSize.innerHTML = x[i].children[2].innerHTML;
+    // pSpeed.innerHTML = x[i].children[3].innerHTML;
+    // pDiet.innerHTML = x[i].children[4].innerHTML;
+    // pLocation.innerHTML = x[i].children[5].innerHTML;
 
     // for(j = 1; j < animalsInfoLength - 1; j++) {
 
     //     paraElement.innerHTML += x[i].children[j].nodeName + " : " + x[i].children[j].innerHTML + "<br>" ;
     // }
-    parentElement.appendChild(divCard);
-    divCard.appendChild(imgElement);
-    divCard.appendChild(cardBody);
-    cardBody.appendChild(titreElement);
-    cardBody.appendChild(pWeight);
-    cardBody.appendChild(pSize);
-    cardBody.appendChild(pSpeed);
-    cardBody.appendChild(pDiet);
-    cardBody.appendChild(pLocation);
-   
+    // parentElement.appendChild(divCard);
+    // divCard.appendChild(imgElement);
+    // divCard.appendChild(cardBody);
+    // cardBody.appendChild(titreElement);
+    // cardBody.appendChild(pWeight);
+    // cardBody.appendChild(pSize);
+    // cardBody.appendChild(pSpeed);
+    // cardBody.appendChild(pDiet);
+    // cardBody.appendChild(pLocation);
   }
 }
 
 /*var tmpHtml = '<div class="test">' + nom_truc + '</div>';*/
-
-
 
 // <div class="card text-bg-dark">
 //   <img src="..." class="card-img" alt="...">
@@ -99,9 +110,6 @@ function fn_writeXML(xml) {
 //   </div>
 // </div>
 
-
-
-  
 // button.addEventListener("click", function() {
 //   for (let i = 0; i < taille; i++) {
 //     const imgElement = document.createElement("img");
@@ -127,10 +135,6 @@ function fn_writeXML(xml) {
 //     parentElement.appendChild(paraElement);
 //   }
 // });
-
-
-
-
 
 /*<div class="border border-light col-sm-12 col-md-5  d-flex flex-column justify-content-center align-items-center m-1 text-light" id="cardSectionElements">
 <div class="card text-bg-dark">
