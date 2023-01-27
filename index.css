@@ -64,6 +64,7 @@ h3 {
     color:black !important; 
 }
 
+
 /* STATS SECTION */
 
 #statSection {
@@ -74,3 +75,24 @@ h3 {
 #bootstrapBars {
     background-color: #8FFF67 !important;
 }
+
+
+/* CARD */
+
+.img-element {
+    width: 600px;
+    height: 400px;
+    padding: 30px;
+}
+
+.titre-element {
+    color: rgb(228, 117, 117);
+    top : 10%;
+}
+
+.para-element {
+    top: 15%;
+    color: rgb(62, 211, 62);
+    width: 300px;
+}
+
