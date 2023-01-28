@@ -35,7 +35,7 @@
         <weight>4000 kg</weight>
         <size>3.5 m</size>
         <speed>40 km/h</speed>
-        <diet>herbivore</diet>
+        <diet>herbivorous</diet>
         <location>Africa and Asia</location>
         <photo>../asset/elephant.jpeg</photo>
     </animalsInfo>
@@ -61,13 +61,13 @@
     </animalsInfo>
 
     <animalsInfo>
-        <name>Linx</name>
+        <name>Lynx</name>
         <weight>20-25 kg</weight>
         <size>1-1.2 m</size>
         <speed>50 km/h</speed>
         <diet>carnivorous</diet>
         <location>Europe and Asia</location>
-        <photo>../asset/linx</photo>
+        <photo>../asset/linx.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>
@@ -75,7 +75,7 @@
         <weight>30-40 kg</weight>
         <size>1.2-1.5 m</size>
         <speed>20 km/h</speed>
-        <diet>herbivore</diet>
+        <diet>herbivorous</diet>
         <location>Ocean</location>
         <photo>../asset/tortue.jpg</photo>
     </animalsInfo>
