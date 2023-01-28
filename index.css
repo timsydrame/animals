@@ -56,10 +56,17 @@ h3 {
     height: 50vh !important;
 }
 
-.img-element {
-    width: 600px;
+.card-img {
+    /* width: 600px;
     height: 400px;
-    padding: 30px;
+    padding: 30px; */
+    /* opacity: 1 !important;
+	-webkit-transition: .3s ease-in-out !important;
+	transition: .3s ease-in-out !important; */
+}
+
+.card-img:hover {
+    /* opacity:0.5 !important; */
 }
 
 .titre-element {
