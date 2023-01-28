@@ -7,8 +7,8 @@ header, #statsTitle{
 
 .title{
 font-family:'Asset', cursive;
-  color:#8FFF67 ;
-  font-size: 180px;
+color:#8FFF67 ;
+font-size: 180px;
 }
 
 .title:hover {
@@ -52,14 +52,21 @@ h3 {
 
 /* CARDS SECTION */
 
-#cardSectionElements {
+.cardSectionElements {
     height: 50vh !important;
 }
 
-.img-element {
-    width: 600px;
+.card-img {
+    /* width: 600px;
     height: 400px;
-    padding: 30px;
+    padding: 30px; */
+    /* opacity: 1 !important;
+	-webkit-transition: .3s ease-in-out !important;
+	transition: .3s ease-in-out !important; */
+}
+
+.card-img:hover {
+    /* opacity:0.5 !important; */
 }
 
 .titre-element {
