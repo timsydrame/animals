@@ -1,4 +1,22 @@
 const parentElement = document.getElementById("cardSection");
+let form = document.getElementById("addAnimals");
+
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  var xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function() {
+    console.log(this);
+  };
+
+  xhr.open("GET", "async/script.php", true);
+  xhr.send();
+
+  return false;
+});
+
 
 function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
@@ -20,7 +38,10 @@ function loadXMLDoc() {
   xmlhttp.send();
 }
 
+
 loadXMLDoc();
+
+
 function fn_writeXML(xml) {
   let xmlDoc = xml.responseXML;
   let x = xmlDoc.getElementsByTagName("animalsInfo");

@@ -80,4 +80,14 @@
         <photo>../asset/tortue.jpg</photo>
     </animalsInfo>
 
+    <animalsInfo>
+    <name>rabbit</name>
+    <weight>2k</weight>
+    <size>20cm</size>
+    <speed>400Km/h</speed>
+    <diet>Carnivore</diet>
+    <location>All aroud the world and beyond space</location>
+    <photo>myonlyfan.com</photo>
+    </animalsInfo>
+
 </animals>
