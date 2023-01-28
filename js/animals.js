@@ -2,20 +2,20 @@ const parentElement = document.getElementById("cardSection");
 let form = document.getElementById("addAnimals");
 
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
+// form.addEventListener("submit", function(e) {
+//   e.preventDefault();
 
-  var xhr = new XMLHttpRequest();
+//   var xhr = new XMLHttpRequest();
 
-  xhr.onreadystatechange = function() {
-    console.log(this);
-  };
+//   xhr.onreadystatechange = function() {
+//     console.log(this);
+//   };
 
-  xhr.open("GET", "async/script.php", true);
-  xhr.send();
+//   xhr.open("GET", "async/script.php", true);
+//   xhr.send();
 
-  return false;
-});
+//   return false;
+// });
 
 
 function loadXMLDoc() {

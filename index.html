@@ -26,7 +26,7 @@
 
   <!-- FORM TEST XML WRITE -->
 
-    <form action="../animals/php/script.php" method="get" id="addAnimals" style="margin: 30px;">
+    <!-- <form action="../animals/php/script.php" method="get" id="addAnimals" style="margin: 30px;">
         <input type="text" placeholder="name" name="name"><br>
         <input type="text" placeholder="weight" name="weigh"><br>
         <input type="text" placeholder="size" name="size"><br>
@@ -35,7 +35,7 @@
         <input type="text" placeholder="location" name="location"><br>
         <input type="text" placeholder="photo" name="photo"><br>
         <input type="submit" value="Add Animals">
-    </form>
+    </form> -->
 
   <!-- FORM TEST XML WRITE -->
 
@@ -52,6 +52,16 @@
             <!-- FORM + MODALS -->
 
             <form id="signupForm">
+
+                <div class="row align-items-center">
+                    <div class="col-3 col-auto">
+                        <label for="nameAnimal" class="col-form-label text-light h3-font-size">name</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" class="form-control bg-success text-white " id="weight">
+                    </div>
+                </div>
+
                 <div class="row my-2 align-items-center">
                     <div class="col-3 col-auto">
                         <label for="poidAnimal" class="col-form-label text-light h3-font-size">weight</label>
@@ -60,6 +70,7 @@
                         <input type="text" class="form-control bg-success text-white " id="weight">
                     </div>
                 </div>
+
                 <div class="row my-2 align-items-center">
                     <div class=" col-3 col-auto">
                         <label for="tailleAnimal" class="col-form-label text-light h2-font-size ">Cut</label>
@@ -69,6 +80,7 @@
                         <input type="text" class="form-control bg-success text-white " id="cut">
                     </div>
                 </div>
+
                 <div class="row my-2 align-items-center">
                     <div class=" col-3 col-auto">
                         <label for="vitessAnimal" class="col-form-label text-light h3-font-size">Speed</label>
@@ -77,6 +89,7 @@
                         <input type="text" class="form-control bg-success text-white" id="speed">
                     </div>
                 </div>
+
                 <div class="row my-2 align-items-center">
                     <div class="col-3 col-auto">
                         <label for="nourritureAnimal"
@@ -84,9 +97,9 @@
                     </div>
                     <div class="col-auto">
                         <input type="text" class="form-control bg-success text-white" id="food">
-
                     </div>
                 </div>
+
                 <div class="row my-2 align-items-center">
                     <div class="col-3 col-auto">
                         <label for="localisationAnimal"
@@ -96,6 +109,7 @@
                         <input type="text" class="form-control bg-success text-white" id="location">
                     </div>
                 </div>
+
                 <div class="row my-2 align-items-center">
 
                     <div class="col-4 col-auto">
@@ -109,19 +123,19 @@
                     <!-- Modal -->
                     <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header  bg-success">
-                            <h1 class="modal-title fs-5 " id="exampleModalLabel">Confirmation</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="modal-content">
+                                <div class="modal-header  bg-success">
+                                    <h1 class="modal-title fs-5 " id="exampleModalLabel">Confirmation</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body  bg-success">
+                                    <p>are you sure you want to add this file?</p>
+                                </div>
+                                <div class="modal-footer bg-success">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
                             </div>
-                            <div class="modal-body  bg-success">
-                                <p>are you sure you want to add this file?</p>
-                            </div>
-                            <div class="modal-footer bg-success">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -180,18 +194,16 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-    <!-- <script src="./js/animals.js"></script> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="./js/stats.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/animals.js"></script>
+    <script src="./js/stats.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 
 </html>
-
