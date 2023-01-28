@@ -44,7 +44,6 @@ section {
     border-left:1vw solid transparent;
     border-right:1vw solid transparent;
     border-image:url(./asset/bg.jpeg) 30;
-    /* overflow-x:initial; */
 }
 
 h3 {
@@ -53,11 +52,35 @@ h3 {
 
 /* CARDS SECTION */
 
-#cardSectionElements {
+.cardSectionElements {
     height: 50vh !important;
 }
 
-/*  a modifier en js et en html du formulaire monbouton1 */
+.card-img {
+    /* width: 600px;
+    height: 400px;
+    padding: 30px; */
+    /* opacity: 1 !important;
+	-webkit-transition: .3s ease-in-out !important;
+	transition: .3s ease-in-out !important; */
+}
+
+.card-img:hover {
+    /* opacity:0.5 !important; */
+}
+
+.titre-element {
+    color: rgb(228, 117, 117);
+    top : 10%;
+}
+
+.para-element {
+    top: 15%;
+    color: rgb(62, 211, 62);
+    width: 300px;
+}
+
+/* ADD BUTTON */
 #addButton {
     height:20vh;
     border-radius: 50% !important;   
@@ -88,22 +111,11 @@ h3 {
     background-color: #8FFF67 !important;
 }
 
+/* RESPONSIVE */
 
-/* CARD */
+@media (max-width: 576px) {
+    .title{
+        font-size: 75px;
+    }
 
-.img-element {
-    width: 600px;
-    height: 400px;
-    padding: 30px;
-}
-
-.titre-element {
-    color: rgb(228, 117, 117);
-    top : 10%;
-}
-
-.para-element {
-    top: 15%;
-    color: rgb(62, 211, 62);
-    width: 300px;
 }
