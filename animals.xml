@@ -7,7 +7,7 @@
         <speed>50 km/h</speed>
         <diet>carnivorous</diet>
         <location>widely distributed in the northern hemisphere</location>
-        <photo>../asset/loup.jpg</photo>
+        <photo>./asset/loup.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>
@@ -17,7 +17,7 @@
         <speed>50 km/h</speed>
         <diet>carnivorous</diet>
         <location>sub-Saharan Africa and India</location>
-        <photo>../asset/lion.jpg</photo>
+        <photo>./asset/lion.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>
@@ -27,7 +27,7 @@
         <speed>48 km/h</speed>
         <diet>carnivorous</diet>
         <location>widely distributed worldwide</location>
-        <photo>../asset/chat.jpg</photo>
+        <photo>./asset/chat.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>
@@ -37,7 +37,7 @@
         <speed>40 km/h</speed>
         <diet>herbivorous</diet>
         <location>Africa and Asia</location>
-        <photo>../asset/elephant.jpeg</photo>
+        <photo>./asset/elephant.jpeg</photo>
     </animalsInfo>
 
     <animalsInfo>
@@ -47,7 +47,7 @@
         <speed>65 km/h</speed>
         <diet>carnivorous</diet>
         <location>Asia</location>
-        <photo>../asset/tigre.jpg</photo>
+        <photo>./asset/tigre.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>
@@ -57,7 +57,7 @@
         <speed>50 km/h</speed>
         <diet>carnivorous</diet>
         <location>Africa and America</location>
-        <photo>../asset/panthere.jpg</photo>
+        <photo>./asset/panthere.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>
@@ -67,7 +67,7 @@
         <speed>50 km/h</speed>
         <diet>carnivorous</diet>
         <location>Europe and Asia</location>
-        <photo>../asset/linx.jpg</photo>
+        <photo>./asset/linx.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>
@@ -77,7 +77,7 @@
         <speed>20 km/h</speed>
         <diet>herbivorous</diet>
         <location>Ocean</location>
-        <photo>../asset/tortue.jpg</photo>
+        <photo>./asset/tortue.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>

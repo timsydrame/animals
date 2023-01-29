@@ -43,6 +43,8 @@ loadXMLDoc();
 
 
 function fn_writeXML(xml) {
+
+  console.log("hellsscscso");
   let xmlDoc = xml.responseXML;
   let x = xmlDoc.getElementsByTagName("animalsInfo");
   let animalsInfoLength = x[0].children.length;
