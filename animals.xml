@@ -2,9 +2,9 @@
 <animals>
     <animalsInfo>
         <name>Wolf</name>
-        <weight>35 kg</weight>
-        <size>1.25 m</size>
-        <speed>50 km/h</speed>
+        <weight>35kg</weight> 
+        <size>1.25</size>
+        <speed>50</speed>
         <diet>carnivorous</diet>
         <location>widely distributed in the northern hemisphere</location>
         <photo>./asset/loup.jpg</photo>
@@ -12,9 +12,9 @@
 
     <animalsInfo>
         <name>Lion</name>
-        <weight>200 kg</weight>
-        <size>1.6 m</size>
-        <speed>50 km/h</speed>
+        <weight>200</weight>
+        <size>1.6</size>
+        <speed>50</speed>
         <diet>carnivorous</diet>
         <location>sub-Saharan Africa and India</location>
         <photo>./asset/lion.jpg</photo>
@@ -22,9 +22,9 @@
 
     <animalsInfo>
         <name>Cat</name>
-        <weight>6 kg</weight>
-        <size>0.65 m</size>
-        <speed>48 km/h</speed>
+        <weight>6</weight>
+        <size>0.65</size>
+        <speed>48</speed>
         <diet>carnivorous</diet>
         <location>widely distributed worldwide</location>
         <photo>./asset/chat.jpg</photo>
@@ -32,9 +32,9 @@
 
     <animalsInfo>
         <name>Elephant</name>
-        <weight>4000 kg</weight>
-        <size>3.5 m</size>
-        <speed>40 km/h</speed>
+        <weight>4000</weight>
+        <size>3.5</size>
+        <speed>40</speed>
         <diet>herbivorous</diet>
         <location>Africa and Asia</location>
         <photo>./asset/elephant.jpeg</photo>
@@ -42,9 +42,9 @@
 
     <animalsInfo>
         <name>Tiger</name>
-        <weight>250 kg</weight>
-        <size>2.5 m</size>
-        <speed>65 km/h</speed>
+        <weight>250</weight>
+        <size>2.5</size>
+        <speed>65</speed>
         <diet>carnivorous</diet>
         <location>Asia</location>
         <photo>./asset/tigre.jpg</photo>
@@ -52,9 +52,9 @@
 
     <animalsInfo>
         <name>Panther</name>
-        <weight>45 kg</weight>
-        <size>1.25 m</size>
-        <speed>50 km/h</speed>
+        <weight>45</weight>
+        <size>1.25</size>
+        <speed>50</speed>
         <diet>carnivorous</diet>
         <location>Africa and America</location>
         <photo>./asset/panthere.jpg</photo>
@@ -62,9 +62,9 @@
 
     <animalsInfo>
         <name>Lynx</name>
-        <weight>20-25 kg</weight>
-        <size>1-1.2 m</size>
-        <speed>50 km/h</speed>
+        <weight>20-25</weight>
+        <size>1-1.2</size>
+        <speed>50</speed>
         <diet>carnivorous</diet>
         <location>Europe and Asia</location>
         <photo>./asset/linx.jpg</photo>
@@ -72,22 +72,22 @@
 
     <animalsInfo>
         <name>Sea turtle</name>
-        <weight>30-40 kg</weight>
-        <size>1.2-1.5 m</size>
-        <speed>20 km/h</speed>
+        <weight>30-40</weight>
+        <size>1.5</size>
+        <speed>20</speed>
         <diet>herbivorous</diet>
         <location>Ocean</location>
         <photo>./asset/tortue.jpg</photo>
     </animalsInfo>
 
     <animalsInfo>
-    <name>rabbit</name>
-    <weight>2k</weight>
-    <size>20cm</size>
-    <speed>400Km/h</speed>
-    <diet>Carnivore</diet>
-    <location>All aroud the world and beyond space</location>
-    <photo>myonlyfan.com</photo>
+        <name>rabbit</name>
+        <weight>2k</weight>
+        <size>20cm</size>
+        <speed>40</speed>
+        <diet>Carnivore</diet>
+        <location>All aroud the world and beyond space</location>
+        <photo>https://www.ipnoze.com/wordpress/wp-content/uploads/2018/09/lapins-mignons-10-009.jpg</photo>
     </animalsInfo>
 
 </animals>
