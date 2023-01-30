@@ -5,16 +5,12 @@ let form = document.getElementById("addAnimals");
 const labelsData = [];
 const dataS = [];
 
-
-
-
-
-form.addEventListener("submit", function(e) {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   var xhr = new XMLHttpRequest();
 
-  xhr.onreadystatechange = function() {
+  xhr.onreadystatechange = function () {
     console.log(this);
   };
 
@@ -23,10 +19,6 @@ form.addEventListener("submit", function(e) {
 
   return false;
 });
-
-
-
-
 
 function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
@@ -46,11 +38,6 @@ function loadXMLDoc() {
   xmlhttp.open("GET", "./animals.xml", true);
   xmlhttp.send();
 }
-
-
-
-
-
 
 loadXMLDoc();
 
@@ -76,23 +63,30 @@ function fn_writeXML(xml) {
     let progressBarSpeed = document.querySelector(".progressBarSpeed");
 
     parentElement.innerHTML += `<div class="border border-light col-12 col-lg-5 d-flex flex-column no-wrap justify-content-center align-items-center m-1 p-2 text-light cardSectionElements">
-                                  <div class="card text-bg-dark">
+                                  <div class="card text-bg-dark overflow-scroll">
                                     <img src="${imgElement}" class="card-img" alt="${titreElement}picture">
                                     <div class="card-img-overlay d-flex flex-column">
                                         <h5 class="card-title">${titreElement}</h5>
-                                        <div class="d-flex justify-content-around">
+                                        <div class="d-flex justify-content-between">
                                           <div>
-                                            <p class="card-text">Weight: <br> ${pWeight} kg</p>
-                                            <p class="card-text">Size : <br> ${pSize} m</p>
+                                            <p class="card-text">Weight: <br> ${pWeight} kg
+                                            <br> Size : <br> ${pSize} m</p></p>
+      
+                                          </div>
+                                          <div>
                                             <p class="card-text">Speed : <br> ${pSpeed} km/h</p>
                                           </div>
                                           <div>
-                                            <p class="card-text">Diet : <br> ${pDiet}</p>
-                                            <p class="card-text">Location : <br>${pLocation}</p>
+                                            <p class="card-text">Diet : <br> ${pDiet}
+                                            <br> Location : <br>${pLocation}</p>
                                           </div>
                                         </div>
                                       </div>
                                     </div>
+                                    <form action="./php/delete.php" method="post">
+                                      <input type="hidden"name="cardToDelet" value="${titreElement}">
+                                      <button type="submit" class="deleteButton">X</button>
+                                    </form>
                                   </div>`;
     // Bootstrap progress bar
 
@@ -105,11 +99,6 @@ function fn_writeXML(xml) {
     dataS.push(pWeight);
   }
 
-
-
-
-
-  
   // Customize text color to white and font size
   Chart.defaults.color = "#fff";
   Chart.defaults.font.size = 16;

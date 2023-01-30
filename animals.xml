@@ -1,14 +1,6 @@
 <?xml version="1.0"?>
 <animals>
-    <animalsInfo>
-        <name>Wolf</name>
-        <weight>35kg</weight> 
-        <size>1.25</size>
-        <speed>50</speed>
-        <diet>carnivorous</diet>
-        <location>widely distributed in the northern hemisphere</location>
-        <photo>./asset/loup.jpg</photo>
-    </animalsInfo>
+    
 
     <animalsInfo>
         <name>Lion</name>
@@ -40,15 +32,7 @@
         <photo>./asset/elephant.jpeg</photo>
     </animalsInfo>
 
-    <animalsInfo>
-        <name>Tiger</name>
-        <weight>250</weight>
-        <size>2.5</size>
-        <speed>65</speed>
-        <diet>carnivorous</diet>
-        <location>Asia</location>
-        <photo>./asset/tigre.jpg</photo>
-    </animalsInfo>
+    
 
     <animalsInfo>
         <name>Panther</name>
@@ -62,8 +46,8 @@
 
     <animalsInfo>
         <name>Lynx</name>
-        <weight>20-25</weight>
-        <size>1-1.2</size>
+        <weight>25</weight>
+        <size>1.2</size>
         <speed>50</speed>
         <diet>carnivorous</diet>
         <location>Europe and Asia</location>
@@ -72,7 +56,7 @@
 
     <animalsInfo>
         <name>Sea turtle</name>
-        <weight>30-40</weight>
+        <weight>40</weight>
         <size>1.5</size>
         <speed>20</speed>
         <diet>herbivorous</diet>
@@ -81,13 +65,23 @@
     </animalsInfo>
 
     <animalsInfo>
-        <name>rabbit</name>
-        <weight>2k</weight>
-        <size>20cm</size>
+        <name>Rabbit</name>
+        <weight>2</weight>
+        <size>0.2</size>
         <speed>40</speed>
-        <diet>Carnivore</diet>
-        <location>All aroud the world and beyond space</location>
+        <diet>carnivorous</diet>
+        <location>All around the world</location>
         <photo>https://www.ipnoze.com/wordpress/wp-content/uploads/2018/09/lapins-mignons-10-009.jpg</photo>
+    </animalsInfo>
+
+    <animalsInfo>
+        <name>Racoon</name>
+        <weight>9</weight>
+        <size>0.8</size>
+        <speed>20</speed>
+        <diet>omnivorous</diet>
+        <location>America</location>
+        <photo>https://m.espacepourlavie.ca/sites/espacepourlavie.ca/files/styles/gal-photo-large/public/cr_eplv-claude-lafond-cl_110614_020_625x417.jpg?itok=GBiatDlE</photo>
     </animalsInfo>
 
 </animals>
