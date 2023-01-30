@@ -107,3 +107,85 @@ h3 {
     color: rgb(62, 211, 62);
     width: 300px;
 }
+
+.card-img-overlay {
+    padding: 10px;
+}
+
+
+
+  /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575.98px) { 
+    .title   {
+         font-size: large;
+        text-align: center;
+        width: 25%;
+      }
+    }
+
+  /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575.98px) { 
+    .card-img-overlay  {
+        width: 25%;
+      }
+    }
+
+  /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+  @media (max-width: 575.98px) { 
+    .card-text  {
+        width: 25%;
+        text-align: center;
+        font-size: large;
+        margin-bottom: 30px ;
+      }
+    }
+  
+  /* `md` applies to small devices (landscape phones, less than 768px)*/
+  @media (max-width: 767.98px) {
+    .card-img-overlay  {
+        width: 60%;
+    }
+}
+  
+  /* `md` applies to small devices (landscape phones, less than 768px)*/
+  @media (max-width: 767.98px) {
+    .title {
+        width: 50%;
+        align-items:flex-start;
+    }
+}
+  
+  /* `md` applies to small devices (landscape phones, less than 768px)*/
+  @media (max-width: 767.98px) {
+    .card-text {
+        width: 50%;
+        align-items:center;
+        font-size: large;
+    }
+}
+  
+  /* `lg` applies to medium devices (tablets, less than 992px)*/
+  @media (max-width: 991.98px) { 
+    .card-img-overlay  {
+        width: 70%;
+      }
+    }
+  
+  
+  /* `lg` applies to medium devices (tablets, less than 992px)*/
+  @media (max-width: 991.98px) { 
+    .title {
+        margin-right: 0.6rem;
+        align-items:flex-start;
+
+      }
+    }
+  
+  
+
+
+
+
+
+
+
