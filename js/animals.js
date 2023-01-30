@@ -5,20 +5,28 @@ let form = document.getElementById("addAnimals");
 const labelsData = [];
 const dataS = [];
 
-// form.addEventListener("submit", function(e) {
-//   e.preventDefault();
 
-//   var xhr = new XMLHttpRequest();
 
-//   xhr.onreadystatechange = function() {
-//     console.log(this);
-//   };
 
-//   xhr.open("GET", "async/script.php", true);
-//   xhr.send();
 
-//   return false;
-// });
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  var xhr = new XMLHttpRequest();
+
+  xhr.onreadystatechange = function() {
+    console.log(this);
+  };
+
+  xhr.open("GET", "async/script.php", true);
+  xhr.send();
+
+  return false;
+});
+
+
+
+
 
 function loadXMLDoc() {
   var xmlhttp = new XMLHttpRequest();
@@ -39,16 +47,23 @@ function loadXMLDoc() {
   xmlhttp.send();
 }
 
-// loadXMLDoc();
+
+
+
+
+
+loadXMLDoc();
 
 function fn_writeXML(xml) {
   console.log("hellsscscso");
   let xmlDoc = xml.responseXML;
   let x = xmlDoc.getElementsByTagName("animalsInfo");
   let animalsInfoLength = x[0].children.length;
+  let animalsHowMany = x.length;
   console.log(animalsInfoLength);
+  console.log(x);
 
-  for (let i = 0; i < animalsInfoLength; i++) {
+  for (let i = 0; i < animalsHowMany; i++) {
     var imgElement = x[i].children[animalsInfoLength - 1].innerHTML;
 
     var titreElement = x[i].children[0].innerHTML;
@@ -90,6 +105,11 @@ function fn_writeXML(xml) {
     dataS.push(pWeight);
   }
 
+
+
+
+
+  
   // Customize text color to white and font size
   Chart.defaults.color = "#fff";
   Chart.defaults.font.size = 16;

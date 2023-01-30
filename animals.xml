@@ -81,13 +81,13 @@
     </animalsInfo>
 
     <animalsInfo>
-    <name>rabbit</name>
-    <weight>2k</weight>
-    <size>20cm</size>
-    <speed>40</speed>
-    <diet>Carnivore</diet>
-    <location>All aroud the world and beyond space</location>
-    <photo>myonlyfan.com</photo>
+        <name>rabbit</name>
+        <weight>2k</weight>
+        <size>20cm</size>
+        <speed>40</speed>
+        <diet>Carnivore</diet>
+        <location>All aroud the world and beyond space</location>
+        <photo>https://www.ipnoze.com/wordpress/wp-content/uploads/2018/09/lapins-mignons-10-009.jpg</photo>
     </animalsInfo>
 
-<animalsInfo><name>dog</name><weight/><size>1</size><speed>40</speed><diet>carnivorous</diet><location>world</location><photo>https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2020/02/322868_1100-732x549.jpg</photo></animalsInfo></animals>
+</animals>
