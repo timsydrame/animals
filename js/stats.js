@@ -1,13 +1,13 @@
 // Variables of useful datas for stats
 
 let weight = document.querySelectorAll(".weight");
-let names = document.getElementsByClassName("name");
+let name = document.getElementsByClassName("name");
 let speed = document.querySelectorAll(".speed");
-let diet = document.querySelectorAll(".diet");
+// let diet = document.querySelectorAll(".diet");
 let progressBarSpeed = document.querySelector(".progressBarSpeed");
 
 // Bootstrap progress bar
-for (let i = 0; i < names.length; i++) {
+for (let i = 0; i < name.length; i++) {
   progressBarSpeed.innerHTML += `<div class="animalName text-light">${names[i].innerHTML}</div>
  <div class="progress " role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
 <div class="progress-bar text-dark" id="bootstrapBars" style="width:${speed[i].innerHTML}%">${speed[i].innerHTML} km/h</div>
@@ -25,8 +25,8 @@ let labelsData = [];
 let dataS = [];
 
 // Looping on names.length to get names and weight datas
-for (let i = 0; i < names.length; i++) {
-  labelsData.push(names[i].innerHTML);
+for (let i = 0; i < name.length; i++) {
+  labelsData.push(name[i].innerHTML);
   dataS.push(weight[i].innerHTML);
 }
 

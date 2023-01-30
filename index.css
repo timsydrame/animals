@@ -57,46 +57,36 @@ h3 {
 }
 
 .card-img {
-    /* width: 600px;
-    height: 400px;
-    padding: 30px; */
-    /* opacity: 1 !important;
+    z-index: 2 !important;
+    opacity: 1 !important;
 	-webkit-transition: .3s ease-in-out !important;
-	transition: .3s ease-in-out !important; */
+	transition: .3s ease-in-out !important;
 }
 
 .card-img:hover {
-    /* opacity:0.5 !important; */
+    opacity:0.2 !important;
 }
 
-.titre-element {
-    color: rgb(228, 117, 117);
-    top : 10%;
-}
+/* FORM AND MODAM */
 
-.para-element {
-    top: 15%;
-    color: rgb(62, 211, 62);
-    width: 300px;
-}
+#addButton{
 
-/* ADD BUTTON */
-#addButton {
-    height:20vh;
     border-radius: 50% !important;   
-    display: block; 
 }
 
-#addButton:hover {
+#addButton:hover{
     background-color: #8FFF67 !important;
     color:black !important; 
 }
 
-/* FORM */
+.formInput {
+    background-color: #8FFF67 ;
+    color:black;
+}
 
-#signupForm{
-    /* visibility: hidden; */
-    display: none;
+#modal {
+    background-color: #8FFF67 !important;
+    color:black !important;
 }
 
 
