@@ -69,12 +69,12 @@ h3 {
 
 /* FORM AND MODAM */
 
-#addButton{
+#addButton, .deleteButton {
 
     border-radius: 50% !important;   
 }
 
-#addButton:hover{
+#addButton:hover, .deleteButton {
     background-color: #8FFF67 !important;
     color:black !important; 
 }
