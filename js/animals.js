@@ -1,6 +1,7 @@
 const parentElement = document.getElementById("cardSection");
 let form = document.getElementById("addAnimals");
 
+console.log("testphp");
 // Creating variables to customize labels and datas of charts from charts.js library
 const labelsData = [];
 const dataS = [];
@@ -84,10 +85,11 @@ function fn_writeXML(xml) {
                                       </div>
                                     </div>
                                     <form action="./php/delete.php" method="post">
-                                      <input type="hidden"name="cardToDelet" value="${titreElement}">
+                                      <input type="hidden"name="cardToDelete" value="${titreElement}">
                                       <button type="submit" class="deleteButton">X</button>
                                     </form>
                                   </div>`;
+
     // Bootstrap progress bar
 
     progressBarSpeed.innerHTML += `<div class="animalName text-light">${titreElement}</div>

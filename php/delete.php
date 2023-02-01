@@ -2,6 +2,8 @@
 
 $cardToDelete = $_POST['cardToDelete'];
 
+echo $cardToDelete;
+
 $xml = simplexml_load_file('../animals.xml');
 
 foreach ($xml->animalsInfo as $animalsInfo) {
@@ -16,4 +18,4 @@ foreach ($xml->animalsInfo as $animalsInfo) {
 echo $xml->asXML();
 echo $xml->asXML("../animals.xml");
 
-header('location: ../index.html');
+// header('location: ../index.html');
