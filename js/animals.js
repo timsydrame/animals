@@ -88,8 +88,10 @@ function fn_writeXML(xml) {
                                       <input type="hidden"name="cardToDelete" value="${titreElement}">
                                       <button type="submit" class="deleteButton">X</button>
                                     </form>
+                                  </div>
                                   </div>`;
 
+    console.log(titreElement);
     // Bootstrap progress bar
 
     progressBarSpeed.innerHTML += `<div class="animalName text-light">${titreElement}</div>

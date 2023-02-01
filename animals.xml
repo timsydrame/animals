@@ -2,15 +2,7 @@
 <animals>
     
 
-    <animalsInfo>
-        <name>Lion</name>
-        <weight>200</weight>
-        <size>1.6</size>
-        <speed>50</speed>
-        <diet>carnivorous</diet>
-        <location>sub-Saharan Africa and India</location>
-        <photo>./asset/lion.jpg</photo>
-    </animalsInfo>
+    
 
     <animalsInfo>
         <name>Cat</name>
