@@ -71,8 +71,7 @@ function fn_writeXML(xml) {
                                         <div class="d-flex justify-content-between">
                                           <div>
                                             <p class="card-text">Weight: <br> ${pWeight} kg
-                                            <br> Size : <br> ${pSize} m</p></p>
-      
+                                            <br> Size : <br> ${pSize} m</p>
                                           </div>
                                           <div>
                                             <p class="card-text">Speed : <br> ${pSpeed} km/h</p>
@@ -82,14 +81,13 @@ function fn_writeXML(xml) {
                                             <br> Location : <br>${pLocation}</p>
                                           </div>
                                         </div>
-                                      </div>
                                     </div>
-                                    <form action="./php/delete.php" method="post">
-                                      <input type="hidden"name="cardToDelete" value="${titreElement}">
-                                      <button type="submit" class="deleteButton">X</button>
-                                    </form>
-                                  </div>
-                                  </div>`;
+                                      <form action="./php/delete.php" method="post"  class="d-flex justify-content-center align-items-center">
+                                        <input type="hidden" name="cardToDelete" value="${titreElement}"/>
+                                        <button type="submit" class="deleteButton">X</button>
+                                      </form>   
+                                    </div>
+                                </div>`;
 
     console.log(titreElement);
     // Bootstrap progress bar
