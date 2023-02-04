@@ -2,8 +2,6 @@
 
 $cardToDelete = $_POST['cardToDelete'];
 
-// echo $cardToDelete;
-
 $xml = simplexml_load_file('../animals.xml');
 
 // echo '<pre>';
@@ -26,12 +24,3 @@ $xml->asXML();
 if ($xml->asXML("../animals.xml")) {
     header('Location: ../index.html');
 }
-
-// $xmlToSave = $xml->asXML();
-// echo '<pre>';
-// var_dump($xmlToSave);
-// echo '</pre>';
-// die;
-// $xmlToSave->asXML('../animals.xml');
-
-// 

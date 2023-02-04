@@ -33,6 +33,18 @@ function loadXMLDoc() {
       // console.log(this);
       // paraf.innerHTML = this.responseText;
       fn_writeXML(this);
+      updateForm = document.getElementsByClassName("updateAnimals");
+      updateButton = document.getElementsByClassName("updateButton");
+      cardAnimal = document.getElementsByClassName("cardAnimals");
+      console.log(updateForm);
+
+      function update(e) {
+        e.preventDefault;
+        console.log("coucou");
+        updateForm.style.display = "block";
+        cardAnimal.style.display = "none";
+      }
+      updateButton.addEventListener("click", update);
     }
   };
 
@@ -64,7 +76,7 @@ function fn_writeXML(xml) {
     let progressBarSpeed = document.querySelector(".progressBarSpeed");
 
     parentElement.innerHTML += `<div class="border border-light col-12 col-lg-5 d-flex flex-column no-wrap justify-content-center align-items-center m-1 p-2 text-light cardSectionElements">
-                                  <div class="card text-bg-dark overflow-scroll">
+                                  <div class="card text-bg-dark overflow-scroll cardAnimals">
                                     <img src="${imgElement}" class="card-img" alt="${titreElement}picture">
                                     <div class="card-img-overlay d-flex flex-column">
                                         <h5 class="card-title">${titreElement}</h5>
@@ -82,12 +94,27 @@ function fn_writeXML(xml) {
                                           </div>
                                         </div>
                                     </div>
-                                      <form action="./php/delete.php" method="post"  class="d-flex justify-content-center align-items-center">
-                                        <input type="hidden" name="cardToDelete" value="${titreElement}"/>
-                                        <button type="submit" class="deleteButton">X</button>
-                                      </form>   
-                                    </div>
-                                </div>`;
+                                    <div class="d-flex justify-content-around">  
+                                <button type="submit" class="updateButton">Update</button>
+                                <form action="./php/delete.php" method="post"  class="d-flex justify-content-center align-items-center">
+                                  <input type="hidden" name="cardToDelete" value="${titreElement}"/>
+                                  <button type="submit" class="deleteButton">X</button>
+                                </form> 
+                              </div>
+                                <form action="./php/update.php" method="post" class="updateAnimals">
+                                  <input class="formInput" type="hidden" placeholder="name" name="cardToUpdate"value="${titreElement}"><br>
+                                  <input class="formInput" type="text" placeholder="weight" name="weigh"><br>
+                                  <input class="formInput" type="text" placeholder="size" name="size"><br>
+                                  <input class="formInput" type="text" placeholder="speed" name="speed"><br>
+                                  <input class="formInput" type="text" placeholder="diet" name="diet"><br>
+                                  <input class="formInput" type="text" placeholder="location" name="location"><br>
+                                  <input class="formInput" type="text" placeholder="picture url" name="picture"><br>
+                                  <div class="d-flex justify-content-center align-items-center p-2">
+                                    <button type="submit" class="w-22 update">Update</button>
+                                  </div>
+                                  </form>
+                              </div>
+                          </div>`;
 
     console.log(titreElement);
     // Bootstrap progress bar
@@ -127,3 +154,15 @@ function fn_writeXML(xml) {
     },
   });
 }
+// updateForm = document.getElementsByClassName("updateAnimals");
+// updateButton = document.getElementsByClassName("updateButton");
+// cardAnimal = document.getElementsByClassName("cardAnimals");
+// console.log(updateForm);
+
+// function update(e) {
+//   e.preventDefault;
+//   console.log("coucou");
+//   updateForm.style.display = "block";
+//   cardAnimal.style.display = "none";
+// }
+// updateButton.addEventListener("click", update);

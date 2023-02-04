@@ -6,7 +6,7 @@
 
     <animalsInfo>
         <name>Cat</name>
-        <weight>6</weight>
+        <weight>8</weight>
         <size>0.65</size>
         <speed>48</speed>
         <diet>carnivorous</diet>

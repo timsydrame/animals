@@ -67,14 +67,17 @@ h3 {
     opacity:0.2 !important;
 }
 
-/* FORM AND MODAM */
+/* ADD FORM*/
 
 #addButton, .deleteButton {
-
     border-radius: 50% !important;   
 }
 
-#addButton:hover, .deleteButton {
+.updateButton, .update {
+    border-radius: 20px;
+}
+
+#addButton:hover, .deleteButton:hover, .updateButton:hover, .update:hover{
     background-color: #8FFF67 !important;
     color:black !important; 
 }
@@ -84,11 +87,11 @@ h3 {
     color:black;
 }
 
-#modal {
-    background-color: #8FFF67 !important;
-    color:black !important;
-}
+/* UPDATE FORM */
 
+/* .updateAnimals {
+    display: none;
+} */
 
 /* STATS SECTION */
 
