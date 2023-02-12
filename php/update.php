@@ -8,7 +8,6 @@ $diet = $_POST["diet"];
 $location = $_POST["location"];
 $picture = $_POST["picture"];
 
-
 $xml = simplexml_load_file('../animals.xml');
 
 // echo '<pre>';
@@ -47,4 +46,4 @@ foreach ($xml->animalsInfo as $animalsInfo) {
 $xml->asXML();
 
 $xml->asXML("../animals.xml");
-header('Location: ../index.html');
+// header('Location: ../index.html');
