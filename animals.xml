@@ -6,7 +6,7 @@
     <animalsInfo>
         <name>Cat</name>
         <weight>8</weight>
-        <size>5</size>
+        <size>2</size>
         <speed>48</speed>
         <diet>herb</diet>
         <location>widely distributed worldwide</location>
@@ -17,7 +17,7 @@
     <animalsInfo>
         <name>Panther</name>
         <weight>45</weight>
-        <size>1.25</size>
+        <size>3</size>
         <speed>50</speed>
         <diet>carnivorous</diet>
         <location>Africa and America</location>

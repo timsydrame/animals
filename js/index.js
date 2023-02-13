@@ -31,25 +31,25 @@
 // }
 // updateButton.addEventListener("click", update);
 
-// window.onload = () => {
-//   console.log("Page Loaded");
-//   let numberCards = [];
-//   numberCards = document.getElementsByClassName("cardsAnimals");
-//   console.log(numberCards.length);
+window.onload = () => {
+  console.log("Page Loaded");
+  let numberCards = [];
+  numberCards = document.getElementsByClassName("cardsAnimals");
+  console.log(numberCards.length);
 
-//   for (let i = 0; i < numberCards.length; i++) {
-//     updateForm = document.getElementById(`formAnimal${i}`);
-//     cardAnimal = document.getElementById(`cardAnimal${i}`);
-//     updateBtn = document.getElementById(`updateButton${i}"`);
-//     console.log(updateBtn);
+  for (let i = 0; i < numberCards.length; i++) {
+    let updateForm = document.getElementById(`formAnimal${i}`);
+    let cardAnimal = document.getElementById(`cardAnimal${i}`);
+    let updateBtn = document.getElementById(`updateButton${i}"`);
+    console.log(updateBtn);
 
-//     function update() {
-//       console.log("coucou");
-//       updateForm.style.display = "block !important";
-//       cardAnimal.style.display = "none !important";
-//     }
-//   }
-// };
+    function update() {
+      console.log("coucou");
+      updateForm.style.display = "block !important";
+      cardAnimal.style.display = "none !important";
+    }
+  }
+};
 // for (let i = 0; i < numberCards.length; i++) {
 //   updateForm = document.getElementById(`formAnimal${i}`);
 //   cardAnimal = document.getElementById(`cardAnimal${i}`);

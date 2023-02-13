@@ -1,12 +1,13 @@
 <?php
 
 $cardToUpdate = $_POST["cardToUpdate"];
-$weight = $_POST["weight"];
+// $weight = $_POST["weight"];
 $size = $_POST["size"];
 $speed = $_POST["speed"];
 $diet = $_POST["diet"];
 $location = $_POST["location"];
 $picture = $_POST["picture"];
+
 
 $xml = simplexml_load_file('../animals.xml');
 
@@ -21,24 +22,23 @@ foreach ($xml->animalsInfo as $animalsInfo) {
     // echo $name;
 
     if ($name == $cardToUpdate) {
-
         if ($weight != "") {
-            $xml->animalsInfo->weight = $weight;
+            $animalsInfo->weight = $weight;
         }
         if ($size != "") {
-            $xml->animalsInfo->size = $size;
+            $animalsInfo->size = $size;
         }
         if ($speed != "") {
-            $xml->animalsInfo->speed = $speed;
+            $animalsInfo->speed = $speed;
         }
         if ($diet != "") {
-            $xml->animalsInfo->diet = $diet;
+            $animalsInfo->diet = $diet;
         }
         if ($location != "") {
-            $xml->animalsInfo->location = $location;
+            $animalsInfo->location = $location;
         }
         if ($picture != "") {
-            $xml->animalsInfo->picture = $picture;
+            $animalsInfo->picture = $picture;
         }
     }
 };
