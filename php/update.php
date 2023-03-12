@@ -1,7 +1,7 @@
 <?php
 
 $cardToUpdate = $_POST["cardToUpdate"];
-// $weight = $_POST["weight"];
+$weight = $_POST["weight"];
 $size = $_POST["size"];
 $speed = $_POST["speed"];
 $diet = $_POST["diet"];
@@ -46,4 +46,4 @@ foreach ($xml->animalsInfo as $animalsInfo) {
 $xml->asXML();
 
 $xml->asXML("../animals.xml");
-// header('Location: ../index.html');
+header('Location: ../index.html');

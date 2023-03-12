@@ -1,17 +1,12 @@
 <?php
 
-// print_r($_GET);
-
-$name = $_GET["name"];
-$weight = $_GET["weight"];
-$size = $_GET["size"];
-$speed = $_GET["speed"];
-$diet = $_GET["diet"];
-$location = $_GET["location"];
-$picture = $_GET["picture"];
-
-
-// $xml = simplexml_load_file("../animals.xml");
+$name = $_POST["name"];
+$weight = $_POST"weight"];
+$size = $_POST["size"];
+$speed = $_POST["speed"];
+$diet = $_POST["diet"];
+$location = $_POST["location"];
+$picture = $_POST["picture"];
 
 $ourXML = file_get_contents("../animals.xml");
 

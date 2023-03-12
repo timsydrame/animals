@@ -1,7 +1,6 @@
 const parentElement = document.getElementById("cardSection");
 let form = document.getElementById("addAnimals");
 
-console.log("testphp");
 // Creating variables to customize labels and datas of charts from charts.js library
 const labelsData = [];
 const dataS = [];
@@ -63,47 +62,65 @@ function fn_writeXML(xml) {
     let progressBarSpeed = document.querySelector(".progressBarSpeed");
 
     parentElement.innerHTML += `<div class="border border-light col-12 col-lg-5 d-flex flex-column no-wrap justify-content-center align-items-center m-1 p-2 text-light cardSectionElements">
-                  <div class="card text-bg-dark overflow-scroll cardsAnimals">
-                    <img src="${imgElement}" class="card-img" alt="${titreElement}picture">
-                    <div class="card-img-overlay d-flex flex-column">
-                        <h5 class="card-title">${titreElement}</h5>
-                        <div class="d-flex justify-content-between">
-                          <div>
-                            <p class="card-text">Weight: <br> ${pWeight} kg
-                            <br> Size : <br> ${pSize} m</p>
-                          </div>
-                          <div>
-                            <p class="card-text">Speed : <br> ${pSpeed} km/h</p>
-                          </div>
-                          <div>
-                            <p class="card-text">Diet : <br> ${pDiet}
-                            <br> Location : <br>${pLocation}</p>
-                          </div>
-                        </div>
+        <div class="card text-bg-dark overflow-hidden cardsAnimals">
+            <img src="${imgElement}" class="card-img" alt="${titreElement}picture">
+                <div class="card-img-overlay d-flex flex-column">
+                   <h5 class="card-title">${titreElement}</h5>
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <p class="card-text">Weight: <br> ${pWeight} kg
+                        <br> Size : <br> ${pSize} m</p>
+                      </div>
+                      <div>
+                        <p class="card-text">Speed : <br> ${pSpeed} km/h</p>
+                      </div>
+                      <div>
+                        <p class="card-text">Diet : <br> ${pDiet}
+                        <br> Location : <br>${pLocation}</p>
+                      </div>
                     </div>
-                    <div class="d-flex justify-content-around">  
-                <button type="submit" class="updateButton">Update</button>
-                <form action="./php/delete.php" method="post"  class="d-flex justify-content-center align-items-center">
-                  <input type="hidden" name="cardToDelete" value="${titreElement}"/>
-                  <button type="submit" class="deleteButton">X</button>
-                </form> 
               </div>
-                <form action="./php/update.php" method="post" class="updateForm">
-                  <input class="formInput" type="hidden" placeholder="name" name="cardToUpdate"value="${titreElement}"><br>
-                  <input class="formInput" type="text" placeholder="weight" name="weight"><br>
-                  <input class="formInput" type="text" placeholder="size" name="size"><br>
-                  <input class="formInput" type="text" placeholder="speed" name="speed"><br>
-                  <input class="formInput" type="text" placeholder="diet" name="diet"><br>
-                  <input class="formInput" type="text" placeholder="location" name="location"><br>
-                  <input class="formInput" type="text" placeholder="picture url" name="picture"><br>
-                  <div class="d-flex justify-content-center align-items-center p-2">
-                    <button type="submit" class="w-22 update">Update</button>
-                  </div>
-                  </form>
+        </div>
+        <div class="d-flex justify-content-around">  
+        <button type="button" class="btn btn-dark" id="modifBtn" data-toggle="modal" data-target="#updateAnimal${titreElement}">Modify</button>  
+        </form>
+        <form action="./php/delete.php" method="post"  class="d-flex justify-content-center align-items-center">
+        <input type="hidden" name="cardToDelete" value="${titreElement}"/>
+        <button type="submit" class="btn btn-dark deleteButton" onClick=alert("Are you sure you want to delete this animal?")>Delete</button>
+      </form>            
+        </div>
+      </div>
+      <div class="modal fade" id="updateAnimal${titreElement}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Modify this animal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              </div>`;
+              <div class="modal-body d-flex justify-content-center">
+              <form action="./php/update.php" method="post" class="updateForm">
+                          <input class="formInput" type="hidden" placeholder="name" name="cardToUpdate"value="${titreElement}"><br>
+                          <input class="formInput" type="text" placeholder="weight" name="weight"><br>
+                          <input class="formInput" type="text" placeholder="size" name="size"><br>
+                          <input class="formInput" type="text" placeholder="speed" name="speed"><br>
+                          <input class="formInput" type="text" placeholder="diet" name="diet"><br>
+                          <input class="formInput" type="text" placeholder="location" name="location"><br>
+                          <input class="formInput" type="text" placeholder="picture url" name="picture"><br>
+              
+              <div class="modal-footer">
+              <button type="submit" class="btn btn-secondary update">Update</button>
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       `;
 
     console.log(titreElement);
+
     // Bootstrap progress bar
 
     progressBarSpeed.innerHTML += `<div class="animalName text-light">${titreElement}</div>
@@ -114,16 +131,6 @@ function fn_writeXML(xml) {
     labelsData.push(titreElement);
     dataS.push(pWeight);
   }
-
-  let updateForm = document.querySelector(".updateForm");
-  let cardAnimal = document.querySelector(".cardAnimals");
-  let updateBtn = document.querySelector(".updateButton");
-
-  updateBtn.addEventListener("click", () => {
-    console.log("coucou");
-    cardAnimal.style.display = "none !important";
-    updateForm.style.display = "block !important";
-  });
 
   // Customize text color to white and font size
   Chart.defaults.color = "#fff";

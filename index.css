@@ -67,30 +67,33 @@ h3 {
     opacity:0.2 !important;
 }
 
+.cardsAnimals {
+    display: block;
+}
+
 /* ADD FORM*/
 
-#addButton, .deleteButton {
-    border-radius: 50% !important;   
+.modal-content{
+    background-color: #8FFF67 !important;
+}
+
+#addButton, .deleteButton, #modifBtn {
+    border-style:none !important;
+    border-radius: 10px !important;   
+    background-color: #8FFF67!important;
+    width: 90% !important;
+    color:black !important;
+   
 }
 
 .updateButton, .update {
     border-radius: 20px;
 }
 
-#addButton:hover, .deleteButton:hover, .updateButton:hover, .update:hover{
-    background-color: #8FFF67 !important;
-    color:black !important; 
-}
 
 .formInput {
-    background-color: #8FFF67 ;
-    color:black;
-}
-
-/* UPDATE FORM */
-
-.updateForm {
-    display: none;
+    background-color: black;
+    color:white;
 }
 
 /* STATS SECTION */
