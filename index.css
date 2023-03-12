@@ -67,28 +67,34 @@ h3 {
     opacity:0.2 !important;
 }
 
-/* FORM AND MODAM */
-
-#addButton, .deleteButton {
-
-    border-radius: 50% !important;   
+.cardsAnimals {
+    display: block;
 }
 
-#addButton:hover, .deleteButton {
+/* ADD FORM*/
+
+.modal-content{
     background-color: #8FFF67 !important;
-    color:black !important; 
 }
+
+#addButton, .deleteButton, #modifBtn {
+    border-style:none !important;
+    border-radius: 10px !important;   
+    background-color: #8FFF67!important;
+    width: 90% !important;
+    color:black !important;
+   
+}
+
+.updateButton, .update {
+    border-radius: 20px;
+}
+
 
 .formInput {
-    background-color: #8FFF67 ;
-    color:black;
+    background-color: black;
+    color:white;
 }
-
-#modal {
-    background-color: #8FFF67 !important;
-    color:black !important;
-}
-
 
 /* STATS SECTION */
 
